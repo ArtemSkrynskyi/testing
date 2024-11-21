@@ -1,0 +1,140 @@
+.gallery {
+	background-color: black;
+	&__inner {
+		position: relative;
+	}
+
+	&__bg-dec {
+		position: absolute;
+
+		@media (max-width: 1200px) {
+			opacity: 0.4;
+			width: 300px;
+		}
+
+		@media (max-width: 768px) {
+			width: 161px;
+			top: 68px;
+		}
+
+		@media (max-width: 480px) {
+			display: none;
+		}
+	}
+
+	&__title {
+		color: #fff;
+		font-family: 'Noto Sans';
+		font-size: var(--48-28);
+		font-style: normal;
+		font-weight: 900;
+		line-height: 70px; /* 145.833% */
+
+		width: max-content;
+		margin: 0 auto;
+		padding-top: 143.5px;
+
+		z-index: 2;
+
+		@media (max-width: 480px) {
+			padding-top: 50px;
+			margin-bottom: 34px;
+			line-height: 1; /* 145.833% */
+		}
+	}
+
+	&__subtitle {
+		color: #fff;
+		text-align: center;
+		font-family: 'Noto Sans';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin: 0 auto;
+		margin-bottom: 62px;
+		max-width: 632px;
+
+		z-index: 2;
+
+		@media (max-width: 480px) {
+			margin-bottom: 36px;
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2px;
+
+		@media (max-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (max-width: 480px) {
+			display: none;
+		}
+	}
+
+	&__item {
+		overflow: hidden;
+	}
+
+	&__image {
+		height: 100%;
+		width: 100%;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	&__swiper {
+		@media (min-width: 480px) {
+			display: none;
+		}
+	}
+
+	&__swiper-wrapper {
+	}
+
+	&__swiper-slide {
+	}
+
+	&__swiper-image {
+	}
+
+	&__swiper-pagination {
+		position: absolute;
+		bottom: 30px;
+
+		@media (min-width: 480px) {
+			display: none;
+		}
+	}
+
+	/* Цвет точек пагинации */
+	.swiper-pagination-bullet {
+		background-color: #c4c4c4; /* Цвет неактивных точек */
+		width: 10px;
+		opacity: 1;
+	}
+
+	/* Цвет активной точки */
+	.swiper-pagination-bullet-active {
+		background-color: #b82121; /* Цвет активной точки */
+		width: 10px;
+	}
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	bottom: -22px;
+}
+
+.header__menu-link::before {
+	@media (max-width: 768px) {
+		display: none;
+	}
+}

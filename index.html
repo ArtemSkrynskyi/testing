@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/swiper.css" />
+		<link rel="stylesheet" href="./css/swiper-min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+			integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<div class="start">
+							<a class="header__logo" href="#!">
+								<img
+									src="./images/logo.svg"
+									alt=""
+									class="logo__image"
+									width="133"
+									height="66"
+									loading="lazy"
+								/>
+							</a>
+							<nav class="header__menu">
+								<button class="btn-reset btn-close">
+									<i class="fa-solid fa-xmark" style="color: #ffffff"></i>
+								</button>
+								<ul class="header__menu-list list-reset">
+									<li class="header__menu-item">
+										<a href="#!" class="header__menu-link">главная</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="#menu" class="header__menu-link">меню</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="#footer" class="header__menu-link">контакты</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="#gallery" class="header__menu-link">галерея</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="end">
+							<div class="header__contacts">
+								<a href="tel:+380 (98) 765 43 21" class="header__contacts-link">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										fill="none"
+									>
+										<g clip-path="url(#clip0_13_49)">
+											<path
+												d="M19.4557 14.678L16.6646 11.8869C15.6678 10.8901 13.9732 11.2889 13.5745 12.5847C13.2754 13.4819 12.2786 13.9803 11.3815 13.7809C9.3879 13.2825 6.69652 10.6908 6.19812 8.59746C5.89907 7.70029 6.49716 6.70349 7.39428 6.40448C8.69013 6.00576 9.08886 4.31119 8.09205 3.31438L5.30099 0.523324C4.50354 -0.174441 3.30738 -0.174441 2.60961 0.523324L0.715678 2.41726C-1.17826 4.41087 0.915039 9.69395 5.60003 14.3789C10.285 19.0639 15.5681 21.2569 17.5617 19.2633L19.4557 17.3694C20.1535 16.5719 20.1535 15.3757 19.4557 14.678Z"
+												fill="white"
+											/>
+										</g>
+										<defs>
+											<clipPath id="clip0_13_49">
+												<rect width="20" height="20" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>+380 (98) 765 43 21</span>
+								</a>
+							</div>
+
+							<ul class="header__social list-reset">
+								<li class="header__social-item">
+									<a href="#!" class="header__social-link"
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+										>
+											<g clip-path="url(#clip0_13_56)">
+												<path
+													d="M17.0703 0H2.92969C1.31439 0 0 1.31439 0 2.92969V17.0703C0 18.6856 1.31439 20 2.92969 20H17.0703C18.6856 20 20 18.6856 20 17.0703V2.92969C20 1.31439 18.6856 0 17.0703 0ZM10.0391 15.2344C7.1312 15.2344 4.76562 12.8688 4.76562 9.96094C4.76562 7.05307 7.1312 4.6875 10.0391 4.6875C12.9469 4.6875 15.3125 7.05307 15.3125 9.96094C15.3125 12.8688 12.9469 15.2344 10.0391 15.2344ZM15.8984 5.85938C14.9292 5.85938 14.1406 5.0708 14.1406 4.10156C14.1406 3.13232 14.9292 2.34375 15.8984 2.34375C16.8677 2.34375 17.6562 3.13232 17.6562 4.10156C17.6562 5.0708 16.8677 5.85938 15.8984 5.85938Z"
+													fill="#E5E5E5"
+												/>
+												<path
+													d="M15.8984 3.51562C15.5751 3.51562 15.3125 3.77823 15.3125 4.10156C15.3125 4.4249 15.5751 4.6875 15.8984 4.6875C16.2218 4.6875 16.4844 4.4249 16.4844 4.10156C16.4844 3.77823 16.2218 3.51562 15.8984 3.51562Z"
+													fill="#E5E5E5"
+												/>
+												<path
+													d="M10.0391 5.85938C7.77771 5.85938 5.9375 7.69958 5.9375 9.96094C5.9375 12.2223 7.77771 14.0625 10.0391 14.0625C12.3004 14.0625 14.1406 12.2223 14.1406 9.96094C14.1406 7.69958 12.3004 5.85938 10.0391 5.85938Z"
+													fill="#E5E5E5"
+												/>
+											</g>
+											<defs>
+												<clipPath id="clip0_13_56">
+													<rect width="20" height="20" fill="white" />
+												</clipPath>
+											</defs></svg
+									></a>
+								</li>
+								<li class="header__social-item">
+									<a href="#!" class="header__social-link"
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+										>
+											<g clip-path="url(#clip0_13_54)">
+												<path
+													d="M17.0703 0H2.92969C1.31439 0 0 1.31439 0 2.92969V17.0703C0 18.6856 1.31439 20 2.92969 20H8.82812V12.9297H6.48438V9.41406H8.82812V7.03125C8.82812 5.09262 10.4051 3.51562 12.3438 3.51562H15.8984V7.03125H12.3438V9.41406H15.8984L15.3125 12.9297H12.3438V20H17.0703C18.6856 20 20 18.6856 20 17.0703V2.92969C20 1.31439 18.6856 0 17.0703 0Z"
+													fill="#E5E5E5"
+												/>
+											</g>
+											<defs>
+												<clipPath id="clip0_13_54">
+													<rect width="20" height="20" fill="white" />
+												</clipPath>
+											</defs></svg
+									></a>
+								</li>
+								<li class="header__social-item">
+									<a href="#!" class="header__social-link"
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+										>
+											<g clip-path="url(#clip0_13_60)">
+												<path
+													d="M7.4614 18.2049C6.59653 18.2049 5.70633 18.1349 4.81079 17.9945C3.23349 17.747 1.63681 16.9219 1.185 16.6749L0 16.027L1.28296 15.6051C2.68539 15.144 3.53851 14.8579 4.59457 14.4099C3.53714 13.8978 2.72217 12.9766 2.32986 11.7858L2.0314 10.8798L2.27615 10.9172C2.04407 10.6832 1.86081 10.4458 1.71875 10.2299C1.21353 9.46253 0.946045 8.52488 1.00296 7.72135L1.05911 6.93049L1.53259 7.1139C1.33286 6.7367 1.18851 6.33387 1.10367 5.91166C0.896912 4.882 1.06995 3.78809 1.59103 2.83152L2.00348 2.07438L2.55508 2.73692C4.29962 4.83256 6.50925 6.07569 9.13177 6.43961C9.02466 5.70124 9.10492 4.98866 9.37057 4.34992C9.67987 3.60621 10.2301 2.97556 10.9613 2.52604C11.7734 2.02692 12.7582 1.78507 13.7343 1.84504C14.7699 1.90867 15.7101 2.2967 16.4569 2.96793C16.8216 2.87318 17.0903 2.77201 17.4535 2.63529C17.672 2.55305 17.9198 2.45966 18.2298 2.35285L19.3724 1.95918L18.6273 4.08717C18.6765 4.08305 18.7271 4.07954 18.7801 4.07725L20.0002 4.02201L19.279 5.00758C19.2377 5.06403 19.2271 5.08006 19.2125 5.10218C19.1544 5.18977 19.082 5.29871 18.0922 6.62043C17.8444 6.95139 17.7206 7.38245 17.7437 7.83442C17.8314 9.55195 17.6207 11.1059 17.117 12.4529C16.6406 13.7274 15.9024 14.8208 14.9231 15.7029C13.7112 16.7942 12.166 17.5415 10.33 17.9235C9.42947 18.1109 8.46237 18.2049 7.4614 18.2049Z"
+													fill="#E5E5E5"
+												/>
+											</g>
+											<defs>
+												<clipPath id="clip0_13_60">
+													<rect width="20.0001" height="20" fill="white" />
+												</clipPath>
+											</defs></svg
+									></a>
+								</li>
+							</ul>
+
+							<button class="btn-reset burger">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="30"
+									height="30"
+									viewBox="0 0 30 30"
+									fill="none"
+								>
+									<path
+										d="M28.75 16.2241H1.25C0.559998 16.2241 0 15.6641 0 14.9741C0 14.2841 0.559998 13.7241 1.25 13.7241H28.75C29.44 13.7241 30 14.2841 30 14.9741C30 15.6641 29.44 16.2241 28.75 16.2241Z"
+										fill="white"
+									/>
+									<path
+										d="M28.75 6.64063H1.25C0.559998 6.64063 0 6.08063 0 5.39063C0 4.70062 0.559998 4.14062 1.25 4.14062H28.75C29.44 4.14062 30 4.70062 30 5.39063C30 6.08063 29.44 6.64063 28.75 6.64063Z"
+										fill="white"
+									/>
+									<path
+										d="M28.75 25.8072H1.25C0.559998 25.8072 0 25.2472 0 24.5572C0 23.8672 0.559998 23.3072 1.25 23.3072H28.75C29.44 23.3072 30 23.8672 30 24.5572C30 25.2472 29.44 25.8072 28.75 25.8072Z"
+										fill="white"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<section class="hero" style="background-image: url('./images/bg.jpg')">
+					<div class="container">
+						<div class="hero__inner">
+							<div class="hero__content">
+								<h1 class="hero__content-title">
+									Попробуй лучшую <span>грузинскую</span> кухню.
+								</h1>
+
+								<p class="hero__content-subtitle">
+									В нашем ресторане Вы найдете лучшие блюда приготвленные по
+									старинным рецептам грузинской кухни. Потрясающий вкус блюд
+									перенесет Вас к атмосферу невероятного Тбилисси не выходя из
+									дома.
+								</p>
+
+								<a href="#!" class="hero__content-btn"> ПЕРЕЙТИ К МЕНЮ </a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="menu" id="menu">
+					<div class="container">
+						<div class="menu__inner">
+							<h2 class="menu__title">Меню</h2>
+							<p class="menu__subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+								pretium netus urna hendrerit convallis aliquam consequat turpis.
+							</p>
+
+							<ul class="menu__list list-reset">
+								<li class="menu__list-item">
+									<img
+										src="./images/food1-list.jpg"
+										alt=""
+										class="menu__list-image"
+									/><button class="menu__list-btn">открыть меню</button
+									><span class="menu__list-title">Холодные закуски</span>
+								</li>
+								<li class="menu__list-item">
+									<img
+										src="./images/food2-list.jpg"
+										alt=""
+										class="menu__list-image"
+									/><button class="menu__list-btn">открыть меню</button
+									><span class="menu__list-title">Салаты</span>
+								</li>
+								<li class="menu__list-item">
+									<img
+										src="./images/food3-list.jpg"
+										alt=""
+										class="menu__list-image"
+									/><button class="menu__list-btn">открыть меню</button
+									><span class="menu__list-title">Выпечка</span>
+								</li>
+								<li class="menu__list-item">
+									<img
+										src="./images/food4-list.jpg"
+										alt=""
+										class="menu__list-image"
+									/><button class="menu__list-btn">открыть меню</button
+									><span class="menu__list-title">Супы</span>
+								</li>
+								<li class="menu__list-item">
+									<img
+										src="./images/food5-list.jpg"
+										alt=""
+										class="menu__list-image"
+									/><button class="menu__list-btn">открыть меню</button
+									><span class="menu__list-title">Блюда на мангале</span>
+								</li>
+								<li class="menu__list-item">
+									<img
+										src="./images/food6-list.jpg"
+										alt=""
+										class="menu__list-image"
+									/><button class="menu__list-btn">открыть меню</button
+									><span class="menu__list-title">Горячие блюда</span>
+								</li>
+								<li class="menu__list-item">
+									<img
+										src="./images/food7-list.jpg"
+										alt=""
+										class="menu__list-image"
+									/><button class="menu__list-btn">открыть меню</button
+									><span class="menu__list-title">Соусы</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="swiper menu__swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper menu__swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide menu__swiper-slide">
+								<button class="btn-reset btn-open-popup">открыть меню</button>
+								<span class="swiper-slide__title">Блюда на мангале</span>
+								<img src="./images/food4.jpg" alt="" />
+							</div>
+
+							<div class="swiper-slide menu__swiper-slide">
+								<button class="btn-reset btn-open-popup">открыть меню</button>
+								<span class="swiper-slide__title">Выпечка</span>
+								<img src="./images/food2.jpg" alt="" />
+							</div>
+
+							<div class="swiper-slide menu__swiper-slide">
+								<button class="btn-reset btn-open-popup">открыть меню</button>
+								<span class="swiper-slide__title">Супы</span>
+								<img src="./images/food3.jpg" alt="" />
+							</div>
+
+							<div class="swiper-slide menu__swiper-slide">
+								<button class="btn-reset btn-open-popup">открыть меню</button>
+								<span class="swiper-slide__title">Блюда на мангале</span>
+								<img src="./images/food4.jpg" alt="" />
+							</div>
+
+							<div class="swiper-slide menu__swiper-slide">
+								<button class="btn-reset btn-open-popup">открыть меню</button>
+								<span class="swiper-slide__title">Горячие блюда</span>
+								<img src="./images/food5.jpg" alt="" />
+							</div>
+
+							<div class="swiper-slide menu__swiper-slide">
+								<button class="btn-reset btn-open-popup">открыть меню</button>
+								<span class="swiper-slide__title">Выпечка</span>
+								<img src="./images/food6.jpg" alt="" />
+							</div>
+
+							<div class="swiper-slide menu__swiper-slide">
+								<button class="btn-reset btn-open-popup">открыть меню</button>
+								<span class="swiper-slide__title">Салаты</span>
+								<img src="./images/food1.jpg" alt="" />
+							</div>
+
+							<div class="swiper-slide menu__swiper-slide">
+								<button class="btn-reset btn-open-popup">открыть меню</button>
+								<span class="swiper-slide__title">Выпечка</span>
+								<img src="./images/food2.jpg" alt="" />
+							</div>
+
+							<div class="swiper-slide menu__swiper-slide">
+								<button class="btn-reset btn-open-popup">открыть меню</button>
+								<span class="swiper-slide__title">Супы</span>
+								<img src="./images/food3.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="btns-actions">
+						<button class="btn-reset btns-actions-prev">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="40"
+								height="40"
+								viewBox="0 0 40 40"
+								fill="none"
+							>
+								<g clip-path="url(#clip0_1_14)">
+									<path
+										d="M8.88821 21.5608L26.6887 39.361C27.1004 39.773 27.65 40 28.236 40C28.822 40 29.3716 39.773 29.7833 39.361L31.0942 38.0504C31.9472 37.1964 31.9472 35.8085 31.0942 34.9558L16.1467 20.0083L31.1108 5.04417C31.5225 4.63214 31.7498 4.08288 31.7498 3.49719C31.7498 2.91085 31.5225 2.36159 31.1108 1.94924L29.7999 0.639004C29.3879 0.226975 28.8386 -1.50043e-05 28.2526 -1.49531e-05C27.6666 -1.49018e-05 27.117 0.226975 26.7053 0.639004L8.88821 18.4555C8.47553 18.8688 8.24887 19.4206 8.25017 20.0073C8.24887 20.5962 8.47553 21.1478 8.88821 21.5608Z"
+										fill="white"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_1_14">
+										<rect
+											width="40"
+											height="40"
+											fill="white"
+											transform="translate(40 40) rotate(180)"
+										/>
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
+						<button class="btn-reset btns-actions-next">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="40"
+								height="41"
+								viewBox="0 0 40 41"
+								fill="none"
+							>
+								<g clip-path="url(#clip0_1_18)">
+									<path
+										d="M31.112 19.3313L13.3115 1.53111C12.8998 1.11908 12.3502 0.892091 11.7642 0.89209C11.1781 0.89209 10.6286 1.11908 10.2169 1.53111L8.90597 2.84167C8.05297 3.69564 8.05297 5.0836 8.90597 5.93628L23.8535 20.8838L8.88938 35.8479C8.47768 36.2599 8.25036 36.8092 8.25036 37.3949C8.25036 37.9812 8.47767 38.5305 8.88938 38.9428L10.2003 40.2531C10.6123 40.6651 11.1616 40.8921 11.7476 40.8921C12.3336 40.8921 12.8832 40.6651 13.2949 40.2531L31.112 22.4366C31.5246 22.0233 31.7513 21.4714 31.75 20.8848C31.7513 20.2958 31.5246 19.7443 31.112 19.3313Z"
+										fill="white"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_1_18">
+										<rect
+											width="40"
+											height="40"
+											fill="white"
+											transform="translate(0.00012207 0.89209)"
+										/>
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
+					</div>
+				</section>
+
+				<div class="modal-menu">
+					<button class="btn-reset btn-close-modal">
+						<i class="fa-solid fa-xmark" style="color: #000000"></i>
+					</button>
+					<div class="container">
+						<div class="modal-menu__inner">
+							<div class="modal-menu__top">
+								<div class="modal-menu__bottom-item">
+									<img
+										src="./images/modal-1.jpg"
+										alt=""
+										class="modal-menu__image"
+									/>
+								</div>
+								<div class="modal-menu__bottom-item">
+									<img
+										src="./images/modal-2.jpg"
+										alt=""
+										class="modal-menu__image"
+									/>
+								</div>
+								<div class="modal-menu__bottom-item">
+									<img
+										src="./images/modal-3.jpg"
+										alt=""
+										class="modal-menu__image"
+									/>
+								</div>
+								<div class="modal-menu__bottom-item">
+									<img
+										src="./images/modal-4.jpg"
+										alt=""
+										class="modal-menu__image"
+									/>
+								</div>
+							</div>
+							<div class="modal-menu__main">
+								<h3 class="modal-menu__title">Холодные закуски</h3>
+								<ul class="modal-menu__list">
+									<li class="modal-menu__item">
+										<div class="modal-menu__item-title">
+											<p>Сациви из курицы</p>
+											<p>390 грн</p>
+										</div>
+										<div class="modal-menu__item-subtitle">
+											<span>200гр.</span>
+											<span>КБЖУ: 320/16/27/4</span>
+										</div>
+										<p class="modal-menu__item-info">
+											Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран
+											5г; уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец
+											по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+										</p>
+									</li>
+
+									<li class="modal-menu__item">
+										<div class="modal-menu__item-title">
+											<p>Сациви из курицы</p>
+											<p>390 грн</p>
+										</div>
+										<div class="modal-menu__item-subtitle">
+											<span>200гр.</span>
+											<span>КБЖУ: 320/16/27/4</span>
+										</div>
+										<p class="modal-menu__item-info">
+											Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран
+											5г; уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец
+											по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+										</p>
+									</li>
+
+									<li class="modal-menu__item">
+										<div class="modal-menu__item-title">
+											<p>Сациви из курицы</p>
+											<p>390 грн</p>
+										</div>
+										<div class="modal-menu__item-subtitle">
+											<span>200гр.</span>
+											<span>КБЖУ: 320/16/27/4</span>
+										</div>
+										<p class="modal-menu__item-info">
+											Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран
+											5г; уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец
+											по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+										</p>
+									</li>
+
+									<li class="modal-menu__item">
+										<div class="modal-menu__item-title">
+											<p>Сациви из курицы</p>
+											<p>390 грн</p>
+										</div>
+										<div class="modal-menu__item-subtitle">
+											<span>200гр.</span>
+											<span>КБЖУ: 320/16/27/4</span>
+										</div>
+										<p class="modal-menu__item-info">
+											Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран
+											5г; уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец
+											по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+										</p>
+									</li>
+
+									<li class="modal-menu__item">
+										<div class="modal-menu__item-title">
+											<p>Сациви из курицы</p>
+											<p>390 грн</p>
+										</div>
+										<div class="modal-menu__item-subtitle">
+											<span>200гр.</span>
+											<span>КБЖУ: 320/16/27/4</span>
+										</div>
+										<p class="modal-menu__item-info">
+											Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран
+											5г; уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец
+											по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+										</p>
+									</li>
+
+									<li class="modal-menu__item">
+										<div class="modal-menu__item-title">
+											<p>Сациви из курицы</p>
+											<p>390 грн</p>
+										</div>
+										<div class="modal-menu__item-subtitle">
+											<span>200гр.</span>
+											<span>КБЖУ: 320/16/27/4</span>
+										</div>
+										<p class="modal-menu__item-info">
+											Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран
+											5г; уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец
+											по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+										</p>
+									</li>
+
+									<li class="modal-menu__item">
+										<div class="modal-menu__item-title">
+											<p>Сациви из курицы</p>
+											<p>390 грн</p>
+										</div>
+										<div class="modal-menu__item-subtitle">
+											<span>200гр.</span>
+											<span>КБЖУ: 320/16/27/4</span>
+										</div>
+										<p class="modal-menu__item-info">
+											Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран
+											5г; уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец
+											по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+										</p>
+									</li>
+
+									<li class="modal-menu__item">
+										<div class="modal-menu__item-title">
+											<p>Сациви из курицы</p>
+											<p>390 грн</p>
+										</div>
+										<div class="modal-menu__item-subtitle">
+											<span>200гр.</span>
+											<span>КБЖУ: 320/16/27/4</span>
+										</div>
+										<p class="modal-menu__item-info">
+											Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран
+											5г; уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец
+											по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+										</p>
+									</li>
+
+									<li class="modal-menu__item">
+										<div class="modal-menu__item-title">
+											<p>Сациви из курицы</p>
+											<p>390 грн</p>
+										</div>
+										<div class="modal-menu__item-subtitle">
+											<span>200гр.</span>
+											<span>КБЖУ: 320/16/27/4</span>
+										</div>
+										<p class="modal-menu__item-info">
+											Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран
+											5г; уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец
+											по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+										</p>
+									</li>
+
+									<li class="modal-menu__item">
+										<div class="modal-menu__item-title">
+											<p>Сациви из курицы</p>
+											<p>390 грн</p>
+										</div>
+										<div class="modal-menu__item-subtitle">
+											<span>200гр.</span>
+											<span>КБЖУ: 320/16/27/4</span>
+										</div>
+										<p class="modal-menu__item-info">
+											Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран
+											5г; уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец
+											по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="modal-menu__bottom">
+								<div class="modal-menu__bottom-item">
+									<img
+										src="./images/modal-5.jpg"
+										alt=""
+										class="modal-menu__image"
+									/>
+								</div>
+								<div class="modal-menu__bottom-item">
+									<img
+										src="./images/modal-6.jpg"
+										alt=""
+										class="modal-menu__image"
+									/>
+								</div>
+								<div class="modal-menu__bottom-item">
+									<img
+										src="./images/modal-7.jpg"
+										alt=""
+										class="modal-menu__image"
+									/>
+								</div>
+								<div class="modal-menu__bottom-item">
+									<img
+										src="./images/modal-8.jpg"
+										alt=""
+										class="modal-menu__image"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section class="gallery" id="gallery">
+					<div class="gallery__inner">
+						<img class="gallery__bg-dec" src="./images/bg-dec.png" alt="" />
+						<h2 class="gallery__title">Галерея</h2>
+						<p class="gallery__subtitle">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+							pretium netus urna hendrerit convallis aliquam consequat turpis.
+						</p>
+
+						<ul class="gallery__list list-reset">
+							<li class="gallery__item">
+								<img
+									src="./images/gallery-food-1.jpg"
+									alt=""
+									class="gallery__image"
+								/>
+							</li>
+							<li class="gallery__item">
+								<img
+									src="./images/gallery-food-2.jpg"
+									alt=""
+									class="gallery__image"
+								/>
+							</li>
+							<li class="gallery__item">
+								<img
+									src="./images/gallery-food-3.jpg"
+									alt=""
+									class="gallery__image"
+								/>
+							</li>
+							<li class="gallery__item">
+								<img
+									src="./images/gallery-food-4.jpg"
+									alt=""
+									class="gallery__image"
+								/>
+							</li>
+							<li class="gallery__item">
+								<img
+									src="./images/gallery-food-5.jpg"
+									alt=""
+									class="gallery__image"
+								/>
+							</li>
+							<li class="gallery__item">
+								<img
+									src="./images/gallery-food-6.jpg"
+									alt=""
+									class="gallery__image"
+								/>
+							</li>
+							<li class="gallery__item">
+								<img
+									src="./images/gallery-food-7.jpg"
+									alt=""
+									class="gallery__image"
+								/>
+							</li>
+							<li class="gallery__item">
+								<img
+									src="./images/gallery-food-8.jpg"
+									alt=""
+									class="gallery__image"
+								/>
+							</li>
+						</ul>
+
+						<div class="swiper gallery__swiper">
+							<div class="swiper-wrapper gallery__swiper-wrapper">
+								<div class="swiper-slide gallery__swiper-slide">
+									<img
+										src="./images/gallery-food-1.jpg"
+										alt=""
+										class="gallery__swiper-image"
+									/>
+								</div>
+								<div class="swiper-slide gallery__swiper-slide">
+									<img
+										src="./images/gallery-food-2.jpg"
+										alt=""
+										class="gallery__swiper-image"
+									/>
+								</div>
+								<div class="swiper-slide gallery__swiper-slide">
+									<img
+										src="./images/gallery-food-3.jpg"
+										alt=""
+										class="gallery__swiper-image"
+									/>
+								</div>
+								<div class="swiper-slide gallery__swiper-slide">
+									<img
+										src="./images/gallery-food-4.jpg"
+										alt=""
+										class="gallery__swiper-image"
+									/>
+								</div>
+								<div class="swiper-slide gallery__swiper-slide">
+									<img
+										src="./images/gallery-food-5.jpg"
+										alt=""
+										class="gallery__swiper-image"
+									/>
+								</div>
+								<div class="swiper-slide gallery__swiper-slide">
+									<img
+										src="./images/gallery-food-6.jpg"
+										alt=""
+										class="gallery__swiper-image"
+									/>
+								</div>
+								<div class="swiper-slide gallery__swiper-slide">
+									<img
+										src="./images/gallery-food-7.jpg"
+										alt=""
+										class="gallery__swiper-image"
+									/>
+								</div>
+								<div class="swiper-slide gallery__swiper-slide">
+									<img
+										src="./images/gallery-food-8.jpg"
+										alt=""
+										class="gallery__swiper-image"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination gallery__swiper-pagination"></div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer" id="footer">
+				<div class="container">
+					<div class="footer__inner">
+						<div class="footer__top">
+							<div class="footer__logo-link">
+								<a class="footer__logo" href="#!">
+									<img
+										src="./images/logo.svg"
+										alt=""
+										class="footer__logo-image"
+										width="133"
+										height="66"
+										loading="lazy"
+									/>
+								</a>
+							</div>
+							<div class="footer__contacts">
+								<a href="tel:+380(98)7654321">+380 (98) 765 43 21</a>
+
+								<div class="footer__contacts-bottom">
+									<img src="./images/telegram.svg" alt="" />
+									<img src="./images/viber.svg" alt="" />
+									<img src="./images/whatsapp.svg" alt="" />
+								</div>
+							</div>
+
+							<div class="footer__location">
+								г. Киев, станция метро <br />
+								<span>“Крещатик”</span>
+							</div>
+
+							<div class="footer__email">
+								<a href="mailto:mail@mal.ua">Email: mail@mal.ua</a>
+							</div>
+						</div>
+						<div class="footer__bottom">
+							<div class="footer__bottom-start">
+								<a class="footer__link" href="#!"
+									>Политика конфиденциальности</a
+								>
+								<a class="footer__link" href="#!"
+									>Пользовательское соглашение</a
+								>
+							</div>
+							<div class="footer__bottom-end">
+								<span>Динамо. Грузинское бистро. Все права защищены, 2021</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="./js/main.js"></script>
+		<script src="./js/swiper.js"></script>
+		<script src="./js/swiper-min.js"></script>
+	</body>
+</html>

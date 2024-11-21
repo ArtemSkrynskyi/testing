@@ -1,0 +1,162 @@
+.modal-menu {
+	position: fixed;
+	overflow: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: 20;
+
+	background-color: #fff;
+
+	padding-top: 20px;
+
+	opacity: 0;
+	pointer-events: none;
+
+	&.active {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	&__inner {
+	}
+
+	&__top {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 30.5px;
+
+		padding-top: 30px;
+
+		@media (max-width: 640px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+	}
+
+	&__bottom {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 30.5px;
+
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		@media (max-width: 640px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+	}
+
+	&__image {
+		width: 273px;
+	}
+
+	&__main {
+	}
+
+	&__title {
+		color: #000;
+		font-family: 'Noto Sans';
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 70px; /* 250% */
+
+		width: max-content;
+		margin: 0 auto;
+		margin-bottom: 34px;
+
+		@media (max-width: 640px) {
+			line-height: 1;
+			margin: 30px auto;
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 30px;
+		row-gap: 20px;
+
+		@media (max-width: 640px) {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 20px;
+		}
+	}
+
+	&__item {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		border-bottom: 1px solid #c4c4c4;
+		padding-bottom: 20px;
+	}
+
+	&__item-title {
+		display: flex;
+		justify-content: space-between;
+		color: #000;
+		font-family: 'Noto Sans';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 20px; /* 111.111% */
+		margin-bottom: 10px;
+
+		white-space: nowrap;
+	}
+
+	&__item-subtitle {
+		display: flex;
+		gap: 26px;
+		color: #000;
+		font-family: 'Noto Sans';
+		font-size: 11px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px; /* 181.818% */
+
+		margin-bottom: 5px;
+	}
+
+	&__item-info {
+		color: #000;
+		font-family: 'Noto Sans';
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 20px; /* 166.667% */
+	}
+}
+
+.btn-close-modal {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+
+	i {
+		font-size: 32px;
+	}
+}
+.modal-menu {
+	overflow-y: scroll; /* Сохраняет функциональность прокрутки */
+}
+
+.modal-menu::-webkit-scrollbar {
+	display: none; /* Скрывает полосу прокрутки */
+}
+
+.modal-menu__bottom-item {
+	overflow: hidden;
+	&:hover {
+		img {
+			transform: scale(1.06);
+		}
+	}
+}
